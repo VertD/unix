@@ -5,6 +5,7 @@ mkdir ~/shared
 touch ~/shared/doc1.txt
 getfacl ~/shared/doc1.txt
 setfacl -m u:irinavasileva:r ~/shared/doc1.txt
+почему-то команды getfacl и setfacl не находятся в терминале
 
 #3. Проверьте, что сосед может получить доступ к созданному файлу. В чем может быть причина, если ему не удалось открыть файл?
 cat ~irinavasileva/shared/doc1.txt
