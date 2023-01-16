@@ -19,7 +19,7 @@ ls /
 grep albert /etc/passwd
 
 #4. Выведите «длинный список» файлов (в том числе скрытых), содержащихся в вашем домашнем каталоге. Опишите, что обозначают все столбцы списка.
-ls -la ~
+ls -la 
 # права доступа |количество файлов в директории | пользователь | группа | размер | дата создания | имя файла
 # drwxr-xr-x+   |  22                           | albert       | staff  |   2982 | Jun 14  2017  |file.txt
 
@@ -37,9 +37,9 @@ a b c d e
 mkdir html archive
 
 #2. Выведите на экран содержимое каталога /usr/share. Ограничьте длину результата 5 строками. Запишите результат работы команды в файл index.html в каталоге с сайтом.
-ls /usr/share
+ls /usr/share | head -5
 touch index.html
-ls /usr/share | head -5 > /html/index.html
+ls /usr/share | head -5 > html/index.html
 
 
 #3. Проверьте количество строк в файле index.html. Выведите на экран содержимое файла index.html.
@@ -52,14 +52,14 @@ mv html html_public
 cp html_public/index.html archive
 
 #6. Выведите список файлов в домашнем каталоге, отсортировав их в порядке, обратном алфавитному. Сохраните вывод в файл ~/html_public/home.html.
-ls  | sort -r > /html_public/home.html
+ls  | sort -r > html_public/home.html
 
 #7. Скопируйте в домашний каталог файл home.html.
-cp /html_public/home/html ~/
+cp html_public/home.html ~/Documents
 
 #8. Создайте символьную ссылку к файлу index.html с именем ~/html_public/link_s.html и жесткую ссылку к этому же файлу с именем ~/html_public/link_h.html.
-ln -s index.html ~/html_public/link_s.html - символьная
-ln index.html ~/html_public/link_h.html - жесткая
+ln -s index.html html_public/link_s.html - символьная
+ln index.html html_public/link_h.html - жесткая
 
 #9. Удалите файл index.html так, чтобы ссылка link_s.html оказалась «сломанной».  Попробуйте открыть содержимое файлов link_s.html и link_h.html.  Прокомментируйте результат.
 rm index.html
