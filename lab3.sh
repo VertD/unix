@@ -52,8 +52,8 @@ ln index.html ~/html_public/link_h.html - жесткая
 
 #9. Удалите файл index.html так, чтобы ссылка link_s.html оказалась «сломанной».  Попробуйте открыть содержимое файлов link_s.html и link_h.html.  Прокомментируйте результат.
 rm index.html
-cat ~/html_public/link_s.html
-cat ~/html_public/link_h.html
+cat /html_public/link_s.html
+cat /html_public/link_h.html
 
 #10. Определите место, занимаемое в системе вашим сайтом (каталогами html_public и archive).
 du html_public archive
