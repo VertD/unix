@@ -47,8 +47,8 @@ ls ~ | sort -r > ~/html_public/home.html
 cp ~/html_public/home/html ~/
 
 #8. Создайте символьную ссылку к файлу index.html с именем ~/html_public/link_s.html и жесткую ссылку к этому же файлу с именем ~/html_public/link_h.html.
-ln -s ../index.html ~/html_public/link_s.html
-ln ~/index.html ~/html_public/link_h.html
+ln -s index.html ~/html_public/link_s.html - символьная
+ln index.html ~/html_public/link_h.html - жесткая
 
 #9. Удалите файл index.html так, чтобы ссылка link_s.html оказалась «сломанной».  Попробуйте открыть содержимое файлов link_s.html и link_h.html.  Прокомментируйте результат.
 rm index.html
