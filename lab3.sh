@@ -41,7 +41,7 @@ mv html html_public
 cp html_public/index.html archive
 
 #6. Выведите список файлов в домашнем каталоге, отсортировав их в порядке, обратном алфавитному. Сохраните вывод в файл ~/html_public/home.html.
-ls  | sort -r > ~/html_public/home.html
+ls  | sort -r > /html_public/home.html
 
 #7. Скопируйте в домашний каталог файл home.html.
 cp /html_public/home/html ~/
