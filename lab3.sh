@@ -28,7 +28,7 @@ mkdir html archive
 #2. Выведите на экран содержимое каталога /usr/share. Ограничьте длину результата 5 строками. Запишите результат работы команды в файл index.html в каталоге с сайтом.
 ls /usr/share
 touch index.html
-ls /usr/share | head -5 > ~/html/index.html
+ls /usr/share | head -5 > /html/index.html
 
 
 #3. Проверьте количество строк в файле index.html. Выведите на экран содержимое файла index.html.
@@ -44,7 +44,7 @@ cp html_public/index.html archive
 ls ~ | sort -r > ~/html_public/home.html
 
 #7. Скопируйте в домашний каталог файл home.html.
-cp ~/html_public/home/html ~/
+cp /html_public/home/html ~/
 
 #8. Создайте символьную ссылку к файлу index.html с именем ~/html_public/link_s.html и жесткую ссылку к этому же файлу с именем ~/html_public/link_h.html.
 ln -s index.html ~/html_public/link_s.html - символьная
