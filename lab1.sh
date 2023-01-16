@@ -16,7 +16,6 @@ alias newdate='date "+%d/%m/%y %H:%M"'
 newdate
 
 #6. Выведите на экран переменные среды. Объясните, что означают переменные SHELL, USER, PATH, HOME, LANG, MAIL, PS1.
-env
 # SHELL - твой shell
 # USER - твой юзер
 # PATH - текущая директория
