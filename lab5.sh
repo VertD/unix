@@ -1,10 +1,10 @@
 #1. Создайте подкаталог shared в вашем домашнем каталоге. Узнайте имя пользователя вашего одногруппника, сидящего за соседним компьютером.
-mkdir ~/shared
+mkdir shared
 
 #2. Создайте файл doc1.txt в новом каталоге. Проверьте стандартные права доступа к файлу. Используя списки контроля доступа, дайте вашему соседу права на чтение созданного файла.
-touch ~/shared/doc1.txt
-getfacl ~/shared/doc1.txt
-setfacl -m u:irinavasileva:r ~/shared/doc1.txt
+touch doc1.txt
+getfacl doc1.txt
+setfacl -m u:irinavasileva:r /shared/doc1.txt
 почему-то команды getfacl и setfacl не находятся в терминале
 
 #3. Проверьте, что сосед может получить доступ к созданному файлу. В чем может быть причина, если ему не удалось открыть файл?
@@ -15,7 +15,7 @@ setfacl -m u:irinavasileva:rw ~/shared
 
 #5. Попросите соседа создать файл file1.txt и записать в него строку «This text is created by user1». Откройте созданный им файл и допишите в него вторую строку «This text is added by user2»
 # сосед
-echo "This text is created by user1" > ~/shared/file1.txt
+echo "This text is created by user1" > /shared/file1.txt
 # ты
-echo "This text is created by user2" > ~/shared/file1.txt
-cat ~/shared/file1.txt
+echo "This text is created by user2" > /shared/file1.txt
+cat /shared/file1.txt
